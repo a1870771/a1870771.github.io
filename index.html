@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dandy Buzzkills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+            <img class="hero" src="images/coolkids.jpg">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.jpg" width="200px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">                      
+                        <li><a class="navLink" href="">Photos</a></li>
+                        <li><a class="navLink" href="">Bios</a></li>  
+                        <li><a class="navLink" href="">Music</a></li>  
+                        <li><a class="navLink" href="">Contact</a></li> 
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>    
+        <div class="triangle"></div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Your grandmas new favourite<br>boy band. </h1>
+                <p>This will be a very short description<br>sucking our own dicks</p>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script> 
+</body>
+</html>

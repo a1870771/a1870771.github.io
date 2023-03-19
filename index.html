@@ -12,10 +12,10 @@
 <body>
     <div class="header">
             <img class="hero" src="images/coolkids.jpg">
-            <img class="japan" src="images/japan.png" width="550px">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logo.jpg" width="200px">
+
+            <div id="navbar">
+                <div>
+                    <img  id="logo" src="images/logo.jpg" width="200px">
                 </div>
                 <nav>
                     <ul id="MenuItems">                      
@@ -26,11 +26,12 @@
                     </ul>
                 </nav>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-            </div>    
-        <div class="triangle"></div>
+                
+            </div>
+            <div id="triangle"></div>    
         <div class="row">
+            <img class="japan" src="images/japan.png" width="550px">
             <div class="col-2">
-
                 <h1>Your grandma's <br>new favourite<br>boy band. </h1>
                 <h2>This will be a very short description<br>sucking our own dicks</h2>
             </div>
@@ -38,9 +39,17 @@
             </div>
         </div>
     </div>
+    <div class="photos">
+        <h1>Photos</h1>
+        <div>
+            <img src="images/hudson.jpg" width="400px">
+            <img src="images/hudson.jpg" width="400px">
+            <img src="images/hudson.jpg" width="400px">
+        </div>
+    </div>
 <script>
     var MenuItems = document.getElementById("MenuItems");
-    
+    window.onscroll = function() {scrollFunction()};
     MenuItems.style.maxHeight = "0px";
     
     function menutoggle(){
@@ -53,6 +62,20 @@
             MenuItems.style.maxHeight = "0px";
         }
     }
+
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+    {
+        document.getElementById("navbar").style.padding = "10px 400px";
+        document.getElementById("logo").style.width = "100px";
+        document.getElementById("triangle").style.marginTop = "0";
+    } else {
+        document.getElementById("navbar").style.padding = "20px 400px 0 400px";
+        document.getElementById("logo").style.width = "200px";
+        document.getElementById("triangle").style.marginTop = "40px";
+    }
+    } 
 </script> 
 </body>
 </html>

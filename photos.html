@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="navbar-green">
@@ -50,10 +50,14 @@
             if(MenuItems.style.maxHeight == "0px")
             {
                 MenuItems.style.maxHeight = "200px";
+                document.getElementById("navbar-green").style.padding = "10px 22vw";
+                document.getElementById("logo").style.width = "120px";
             }
             else
             {
                 MenuItems.style.maxHeight = "0px";
+                document.getElementById("navbar-green").style.padding = "20px 20vw 0 20vw";
+                document.getElementById("logo").style.width = "200px";
             }
         }
     
